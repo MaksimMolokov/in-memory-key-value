@@ -11,6 +11,7 @@ var (
 	ErrKeyNotFound = errors.New("ключ не найден")
 )
 
+// Домашнее задание: комментарий 1
 // engine реализует интерфейс Engine
 type engine struct {
 	data   map[string]string
@@ -69,4 +70,6 @@ func (e *engine) Delete(key string) error {
 
 	delete(e.data, key)
 	return nil
-} 
+}
+
+// Домашнее задание: комментарий 2

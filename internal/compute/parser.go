@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"db/pkg/compute"
+
 	"go.uber.org/zap"
 )
 
@@ -69,4 +70,4 @@ func (p *parser) Parse(input string) (compute.Command, error) {
 func isValidArgument(arg string) bool {
 	matched, _ := regexp.MatchString(`^[\w\-\.]+$`, arg)
 	return matched
-} 
+}
