@@ -8,9 +8,11 @@ import (
 	"db/internal/compute"
 	"db/internal/storage"
 	computePkg "db/pkg/compute"
+
 	"go.uber.org/zap"
 )
 
+// Домашнее задание: комментарий 1
 func main() {
 	// Инициализация логгера
 	logger, err := zap.NewDevelopment()
@@ -74,4 +76,6 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		fmt.Printf("Ошибка чтения ввода: %v\n", err)
 	}
-} 
+}
+
+// Домашнее задание: комментарий 2

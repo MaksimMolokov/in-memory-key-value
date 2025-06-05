@@ -1,10 +1,12 @@
 package compute
 
+// Домашнее задание: комментарий 1
 // Command представляет собой интерфейс для всех команд
 type Command interface {
 	Execute() error
 }
 
+// Домашнее задание: комментарий 2
 // Parser представляет собой интерфейс для парсера команд
 type Parser interface {
 	Parse(input string) (Command, error)
@@ -45,4 +47,4 @@ type DelCommand struct {
 
 func (c *DelCommand) Execute() error {
 	return nil
-} 
+}

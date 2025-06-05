@@ -1,5 +1,6 @@
 package storage
 
+// Домашнее задание: комментарий 1
 // Engine представляет собой интерфейс для хранилища данных
 type Engine interface {
 	// Set сохраняет значение по ключу
@@ -8,4 +9,7 @@ type Engine interface {
 	Get(key string) (string, error)
 	// Delete удаляет значение по ключу
 	Delete(key string) error
-} 
+}
+
+// Домашнее задание: комментарий 2
+// ... existing code ...
